@@ -117,8 +117,17 @@ USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+#追記
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+#追記
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
 STATIC_URL = '/static/'
+#追記
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
+
 """
 import dj_database_url
 DATABASES['default'] = dj_database_url.config()
