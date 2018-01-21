@@ -1,0 +1,17 @@
+djangogirls_MEMO
+
+--作業ディレクトリへ
+cd Desktop/work/programing/python/djangogirls/
+--仮想環境に入る
+source myvenv/bin/activate
+--ローカルサーバRUN
+python manage.py runserver
+--herokuにデプロイ(gitにpush)
+git push heroku master
+--python shell起動
+python manage.py shell
+
+
+
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured.
+→mysite/setting.pyのDatebaseの記述コメントアウト
