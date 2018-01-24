@@ -129,13 +129,13 @@ STATICFILES_DIRS = (
 )
 
 DEBUG = False
+
+ALLOWED_HOSTS = ['*']
 """
 import dj_database_url
 DATABASES['default'] = dj_database_url.config()
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARD_PROTO', 'https')
-
-ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = 'staticfiles'
 
